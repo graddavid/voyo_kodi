@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.voyo.si"
+       name="VOYO.si Repository"
+       version="1.0.0"
+       provider-name="Antigravity">
+    <extension point="xbmc.addon.repository" name="VOYO.si Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/graddavid/voyo_kodi/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/graddavid/voyo_kodi/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/graddavid/voyo_kodi/main/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="sl_SI">Skladišče dodatkov za VOYO.si</summary>
+        <summary lang="en_GB">Kodi Add-on Repository for VOYO.si</summary>
+        <description lang="sl_SI">Uradno skladišče za namestitev in samodejne posodobitve dodatka VOYO.si za Kodi.</description>
+        <description lang="en_GB">Repository for installing and updating VOYO.si Kodi video add-on.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

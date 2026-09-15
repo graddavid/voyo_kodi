@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.voyo.si"
+       name="VOYO.si"
+       version="1.0.1"
+       provider-name="Antigravity">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.inputstreamhelper" version="0.5.0" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="sl_SI">Predvajalnik za VOYO.si</summary>
+        <summary lang="en_GB">Kodi video add-on for VOYO.si</summary>
+        <description lang="sl_SI">Neuradni VOYO.si vtičnik za Kodi. Omogoča prijavo z obstoječim VOYO.si računom, brskanje po bogati zbirki filmov, serij, oddaj ter ogled TV kanalov v živo (POP TV, Kanal A, KINO, BRIO, OTO, VOYO) z zaščito Widevine DRM.</description>
+        <description lang="en_GB">Unofficial VOYO.si Kodi video plugin. Watch movies, series, shows and live TV channels with your VOYO.si subscription using Widevine DRM.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-only</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
