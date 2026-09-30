@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.video.voyo.si" name="VOYO.si" version="1.0.1" provider-name="Antigravity">
+<addons><addon id="plugin.video.voyo.si" name="VOYO.si" version="1.1.0" provider-name="graddavid">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.inputstreamhelper" version="0.5.0" optional="true" />
+        <import addon="inputstream.adaptive" version="19.0.0" />
+        <import addon="script.module.inputstreamhelper" version="0.5.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -10,16 +11,27 @@
     <extension point="xbmc.addon.metadata">
         <summary lang="sl_SI">Predvajalnik za VOYO.si</summary>
         <summary lang="en_GB">Kodi video add-on for VOYO.si</summary>
-        <description lang="sl_SI">Neuradni VOYO.si vtičnik za Kodi. Omogoča prijavo z obstoječim VOYO.si računom, brskanje po bogati zbirki filmov, serij, oddaj ter ogled TV kanalov v živo (POP TV, Kanal A, KINO, BRIO, OTO, VOYO) z zaščito Widevine DRM.</description>
-        <description lang="en_GB">Unofficial VOYO.si Kodi video plugin. Watch movies, series, shows and live TV channels with your VOYO.si subscription using Widevine DRM.</description>
+        <description lang="sl_SI">Neuradni VOYO.si vtičnik za Kodi. Prijava z obstoječim VOYO.si računom (s kodo na TV ali z e-pošto), brskanje po filmih, serijah in oddajah, Nadaljuj z ogledom, Moj VOYO in VOYO profili. Predvajanje z zaščito Widevine DRM.</description>
+        <description lang="en_GB">Unofficial VOYO.si Kodi video add-on. Log in with your VOYO.si account (TV code or e-mail), browse movies, series and shows, continue watching, My VOYO and VOYO profiles. Widevine DRM playback.</description>
+        <disclaimer lang="en_GB">Unofficial add-on, not affiliated with PRO PLUS d.o.o. A VOYO.si subscription is required.</disclaimer>
+        <disclaimer lang="sl_SI">Neuradni dodatek, ni povezan s PRO PLUS d.o.o. Potrebna je naročnina na VOYO.si.</disclaimer>
         <platform>all</platform>
         <license>GPL-3.0-only</license>
+        <website>https://voyo.si</website>
+        <source>https://github.com/graddavid/voyo_kodi</source>
+        <news>v1.1.0
+- Kodi is now registered as a single VOYO device that survives restarts (no more new device on every boot)
+- New login: pairing code for TV or e-mail/password dialog; sessions refresh silently
+- Logout can remove the device from the account to free a slot
+- VOYO profiles, My VOYO list, proper Continue watching with titles and resume
+- Featured rows from the voyo.si home page, search history
+- Redesigned settings, official VOYO logo, Kodi 20-22 compatibility fixes</news>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon><addon id="repository.voyo.si" name="VOYO.si Repository" version="1.0.0" provider-name="Antigravity">
+</addon><addon id="repository.voyo.si" name="VOYO.si Repository" version="1.0.1" provider-name="graddavid">
     <extension point="xbmc.addon.repository" name="VOYO.si Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/graddavid/voyo_kodi/main/addons.xml</info>
