@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.voyo.si"
        name="VOYO.si"
-       version="1.1.1"
+       version="1.1.2"
        provider-name="graddavid">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -22,8 +22,9 @@
         <license>GPL-3.0-only</license>
         <website>https://voyo.si</website>
         <source>https://github.com/graddavid/voyo_kodi</source>
-        <news>v1.1.1
-- Removed VOYO profile selection (picking a profile broke playback); you may need to log in once more
+        <news>v1.1.2
+- Fix "visitor not set" login error: the main VOYO profile is now selected automatically after login (no profile menu)
+- You may need to log in once more after updating
 
 v1.1.0
 - Kodi is now registered as a single VOYO device that survives restarts (no more new device on every boot)
