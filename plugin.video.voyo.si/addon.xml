@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.voyo.si"
        name="VOYO.si"
-       version="1.1.3"
+       version="1.1.4"
        provider-name="graddavid">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -22,7 +22,12 @@
         <license>GPL-3.0-only</license>
         <website>https://voyo.si</website>
         <source>https://github.com/graddavid/voyo_kodi</source>
-        <news>v1.1.3
+        <news>v1.1.4
+- Fix crash on every menu after login (subscription date is a timestamp)
+- Show e-mail instead of the auto-generated VOYO nickname
+- Code login: if VOYO rejects the device ("Visitor not set"), a new device id and code are used automatically
+
+v1.1.3
 - Fix "visitor not set deviceId" login error: a rejected device link no longer fails the login (same as v1.0.x)
 - Removed automatic profile switching
 
