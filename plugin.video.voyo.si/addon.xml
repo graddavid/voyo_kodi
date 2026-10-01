@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.voyo.si"
        name="VOYO.si"
-       version="1.1.4"
+       version="1.1.5"
        provider-name="graddavid">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -14,15 +14,18 @@
     <extension point="xbmc.addon.metadata">
         <summary lang="sl_SI">Predvajalnik za VOYO.si</summary>
         <summary lang="en_GB">Kodi video add-on for VOYO.si</summary>
-        <description lang="sl_SI">Neuradni VOYO.si vtičnik za Kodi. Prijava z obstoječim VOYO.si računom (s kodo na TV ali z e-pošto), brskanje po filmih, serijah in oddajah, Nadaljuj z ogledom in Moj VOYO. Predvajanje z zaščito Widevine DRM.</description>
-        <description lang="en_GB">Unofficial VOYO.si Kodi video add-on. Log in with your VOYO.si account (TV code or e-mail), browse movies, series and shows, continue watching and My VOYO. Widevine DRM playback.</description>
+        <description lang="sl_SI">Neuradni VOYO.si vtičnik za Kodi. Prijava z obstoječim VOYO.si računom (s kodo na TV ali z e-pošto), brskanje po filmih, serijah in oddajah, Nadaljuj z ogledom in Moj VOYO. Predvajanje brez dodatne namestitve Widevine.</description>
+        <description lang="en_GB">Unofficial VOYO.si Kodi video add-on. Log in with your VOYO.si account (TV code or e-mail), browse movies, series and shows, continue watching and My VOYO. No Widevine setup needed for playback.</description>
         <disclaimer lang="en_GB">Unofficial add-on, not affiliated with PRO PLUS d.o.o. A VOYO.si subscription is required.</disclaimer>
         <disclaimer lang="sl_SI">Neuradni dodatek, ni povezan s PRO PLUS d.o.o. Potrebna je naročnina na VOYO.si.</disclaimer>
         <platform>all</platform>
         <license>GPL-3.0-only</license>
         <website>https://voyo.si</website>
         <source>https://github.com/graddavid/voyo_kodi</source>
-        <news>v1.1.4
+        <news>v1.1.5
+- Videos play without Widevine: VOYO serves AES-128 HLS, so the add-on no longer forces a Widevine license (fixes "Widevine not supported" errors)
+
+v1.1.4
 - Fix crash on every menu after login (subscription date is a timestamp)
 - Show e-mail instead of the auto-generated VOYO nickname
 - Code login: if VOYO rejects the device ("Visitor not set"), a new device id and code are used automatically
